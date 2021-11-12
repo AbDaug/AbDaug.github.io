@@ -1,12 +1,12 @@
 body {
-    background-color: none;
+    background-color: #001c58;
   }
   h1 {
-    color: rgb(0, 151, 139);
+    color: rgb(255, 218, 9);
     text-align: center;
   }
   p {
-    color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
     font-size: 300%;
     font-style: italic;
     text-align: center;
@@ -15,19 +15,25 @@ body {
     display: block;
     margin: auto;
   }
+  #crying {
+    float: right;
+    font-size: xx-small;
+  }
   ul {
     list-style-type: none;
     margin: 0;
     padding: 0;
     overflow: hidden;
-    background-color: rgb(202, 200, 200);
+    background-color: rgb(185, 1, 1);
   }
   li {
     float: left;
   }
   li a {
     display: block;
-    color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
+    font-family: sans-serif;
+    font-style: italic;
     text-align: center;
     padding: 14px 16px;
   }
