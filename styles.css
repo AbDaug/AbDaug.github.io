@@ -1,12 +1,12 @@
 body {
-    background-color: #badbad;
+    background-color: none;
   }
   h1 {
-    color: rgb(17, 0, 255);
+    color: rgb(0, 151, 139);
     text-align: center;
   }
   p {
-    color: rgb(83, 102, 0);
+    color: rgb(0, 0, 0);
     font-size: 300%;
     font-style: italic;
     text-align: center;
@@ -15,5 +15,21 @@ body {
     display: block;
     margin: auto;
     width: 100%;
+  }
+  ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: rgb(202, 200, 200);
+  }
+  li {
+    float: left;
+  }
+  li a {
+    display: block;
+    color: rgb(0, 0, 0);
+    text-align: center;
+    padding: 14px 16px;
   }
   
