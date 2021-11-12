@@ -14,7 +14,6 @@ body {
   #test {
     display: block;
     margin: auto;
-    width: 100%;
   }
   ul {
     list-style-type: none;
