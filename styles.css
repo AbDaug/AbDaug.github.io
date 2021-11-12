@@ -1,13 +1,19 @@
 body {
-    background-color: powderblue;
+    background-color: #badbad;
   }
   h1 {
-    color: blue;
+    color: rgb(17, 0, 255);
+    text-align: center;
   }
   p {
-    color: red;
+    color: rgb(83, 102, 0);
+    font-size: 300%;
+    font-style: italic;
+    text-align: center;
   }
   #test {
     display: block;
     margin: auto;
+    width: 100%;
   }
+  
