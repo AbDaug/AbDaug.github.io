@@ -8,5 +8,6 @@ body {
     color: red;
   }
   #test {
+    display: block;
     margin: auto;
   }
