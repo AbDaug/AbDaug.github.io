@@ -11,7 +11,8 @@ h1{
 }
 
 h2{
-  color: #000000;
+  color: #ffffff;
+  text-align: center;
 }
 
 p{
@@ -52,9 +53,10 @@ header{
   align-items: center;
 }
 
+/*smaller screens/mobile*/
 @media screen and (max-width: 780px){
   nav{
-      background-color: #455057;
+      background-color: #000000;
   }
 
   nav ul {
@@ -75,7 +77,7 @@ header{
   }
 
   img.projectimg{
-      border: 5px solid #ffffff;
+      border: 5px solid #000000;
       max-height: 200px;
       max-width: 300px;
       align-self: center;
@@ -85,6 +87,11 @@ header{
   .project{
       display: flex;
       flex-flow: column nowrap;
+  }
+
+  .projectwork{
+    color: yellow;
+    text-align: center;
   }
 
   #resume{
@@ -108,9 +115,10 @@ header{
   }
 }
 
+/*full size screens*/
 @media screen and (min-width: 780px){
   nav{
-      background-color: #455057;
+      background-color: #000000;
       position: sticky;
       top: 0;
   }
@@ -133,13 +141,17 @@ header{
   img.projectimg{
       border: 5px solid #000000;
       width: 40%;
-      margin: 10px auto;
+      margin: 10px;
   }
 
   .project{
       display: flex;
       flex-flow: row nowrap;
       align-items: center;
+  }
+
+  .projectwork{
+    color: rgb(229, 255, 0);
   }
 
   #portrait{
