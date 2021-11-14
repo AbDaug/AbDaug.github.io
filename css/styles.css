@@ -1,0 +1,229 @@
+body{
+  font-family: sans-serif;
+  background-image: url("/images/galaxy-wallpaper-19.jpg");
+  background-color: rgb(0, 7, 105);
+}
+
+h1{
+  text-align: center;
+  color: #dbaeff;
+  font-size: 50px;
+}
+
+h2{
+  color: #000000;
+}
+
+p{
+  color: rgb(255, 255, 255);
+}
+
+main{
+  display: flex;
+  flex-direction: column;
+  width: 90vw;
+  margin: 0px auto;
+  background-color: #790000;
+}
+
+#contactheading{
+  color: #ffffff;
+  font-size: 50px;
+}
+
+#biodiv{
+  display: flex;
+  flex-direction: column;
+}
+
+#bioheading{
+  font-size: 50px;
+  color: #ffffff;
+}
+
+#projectheading{
+  color: #ffffff;
+  font-size: 50px;
+}
+
+header{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+@media screen and (max-width: 780px){
+  nav{
+      background-color: #455057;
+  }
+
+  nav ul {
+      display: flex;
+      flex-direction: column;
+      margin: 0;
+      padding: 0;
+      list-style-type: none;
+      justify-content: center;
+      text-align: center;
+  }
+
+  #bio{
+      border: 3px solid #ffffff;
+      max-width: 300px;
+      padding: 1rem;
+      margin: 0 0 5rem;
+  }
+
+  img.projectimg{
+      border: 5px solid #ffffff;
+      max-height: 200px;
+      max-width: 300px;
+      align-self: center;
+      margin: 10px 5px;
+  }
+
+  .project{
+      display: flex;
+      flex-flow: column nowrap;
+  }
+
+  #resume{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      font-size: x-large;
+  }
+
+  #portrait{
+      border: 5px solid #ffffff;
+      min-height: 100px;
+      max-height: 200px;
+      margin: 0 0 2rem;
+  }
+
+  iframe{
+      border: 5px solid #ffffff;
+      width: fit-content;
+      margin: auto;
+  }
+}
+
+@media screen and (min-width: 780px){
+  nav{
+      background-color: #455057;
+      position: sticky;
+      top: 0;
+  }
+
+  nav ul {
+      display: flex;
+      margin: 0;
+      padding: 0;
+      list-style-type: none;
+      justify-content: center;
+  }
+
+  #bio{
+      border: 3px solid #000000;
+      width: 40%;
+      padding: 1rem;
+      margin: 0 0 5rem;
+  }
+
+  img.projectimg{
+      border: 5px solid #000000;
+      width: 40%;
+      margin: 10px auto;
+  }
+
+  .project{
+      display: flex;
+      flex-flow: row nowrap;
+      align-items: center;
+  }
+
+  #portrait{
+      border: 5px solid #bb0000;
+      min-height: 200px;
+      max-height: 500px;
+      margin: 0 0 2rem;
+  }
+
+  p{
+      font-size: x-large;
+  }
+
+  .projectdesc{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      font-size: x-large;
+      margin-right: 1em;
+  }
+
+  #resume{
+      display: none;
+  }
+
+  #project2video{
+      border: 5px solid #ffffff;
+      height: 350px;
+      width: 240em;
+  }
+
+  #project4video{
+      border: 5px solid #ffffff;
+      height: 350px;
+      width: 292em;
+  }
+
+  #project8video{
+      border: 5px solid #ffffff;
+      height: 350px;
+      width: 171em;
+  }
+
+  #project9video{
+      border: 5px solid #ffffff;
+      height: 350px;
+      width: 318em;
+  }
+}
+
+nav ul li a {
+  display: block;
+  border: 1px solid;
+  border-radius: .5em;
+  padding: .5em 1em;
+  margin: .5em;
+  font-size: x-large;
+}
+
+div{
+  margin-left: 1em;
+}
+
+#projects{
+  display: flex;
+  flex-direction: column;
+}
+
+a:link{
+  color: #5AC4C4;
+}
+
+a:visited{
+  color: #389797;
+}
+
+a:focus{
+  color:#3eadad;
+}
+
+a:hover{
+  color: #3eadad;
+}
+
+a:active{
+  color: #3eadad;
+}

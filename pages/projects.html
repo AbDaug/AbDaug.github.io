@@ -1,40 +1,50 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+
 <head>
-	<title>Abigail Markish's Portfolio</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Abigail Markish's Portfolio</title>
 
-	<!--css sheet and favicon-->
-	<link rel="stylesheet" href="/styles.css">
+	<!--favicon and css sheet-->
 	<link rel="shortcut icon" type="image/x-icon" href="/images/oof.ico">
+    <link rel="stylesheet" href="/css/styles.css">
+
+    <!--FontAwesome key-->
+    <script src="https://kit.fontawesome.com/59e8b60c68.js" crossorigin="anonymous"></script>
 </head>
+
 <body>
-	<ul>
-		<li><a href="/">Home</a></li>
-		<li><a href="/pages/about.html">About</a></li>
-		<li><a class="active" href="/pages/projects.html">Portfolio</a></li>
-	</ul>
+    <header>
+        <h1>Abigail Markish<br>Rootin', Tootin' and Ready for Shootin' 🤠</h1>
 
-	<h1>Rootin, Tootin, and Ready for Shootin 🤠</h1>
-	<p>Hire Me :D</p>
+        <img src="/images/cryingchef.gif" id="portrait" alt="Portrait of John Heiden">
+    </header>
 
-    <!--Table of Projects-->
-    <table>
-        <tr>
-            <th>Image</th>
-            <th>Project</th>
-            <th>Description</th>
-        </tr>
-        <tr>
-            <td>Image</td>
-            <td>Through The Lens</td>
-            <td>Capstone</td>
-        </tr>
-        <tr>
-            <td>Image</td>
-            <td>Lost and Found</td>
-            <td>Audio Class</td>
-        </tr>
-      </table>
+    <main>
+        <nav>
+            <ul>
+                <li><a href="/">Home</a></li>
+                <li><a href="/index.html#biodiv">About Me</a></li>
+                <li><a class="active" href="/pages/projects.html#projects">Projects</a></li>
+                <li><a href="media/AbigailMarkishResumeOctober2021.pdf" target="_blank">Resume</a></li>
+            </ul>
+        </nav>
+
+        <section id="projects">
+            <h1 id="projectheading">Projects</h1>
+
+            <div id="project10" class="project">
+                <img src="/media/fierigod.png" class="projectimg" id="project10img" alt="test image">
+                <div class="projectdesc">
+                    <h2>Test Project Template</h2>
+                    <p>According to all known laws of aviation, there is no way a bee should be able to fly.
+                        Its wings are too small to get its fat little body off the ground.
+                        The bee, of course, flies anyway because bees don't care what humans think is impossible.
+                    </p>
+                </div>
+            </div>
+        </section>
+    </main>
 </body>
 </html>
-	
