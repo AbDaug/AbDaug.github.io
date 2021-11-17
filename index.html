@@ -1,0 +1,852 @@
+<!DOCTYPE html>
+<html lang="en">
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+
+<!--head contains css and js inside-->
+<head>
+    <title>Abigail Markish's Portfolio</title>
+    <base target="_parent">
+    <link rel="icon" href="media/oof.ico">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.11.0/css/all.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&amp;display=swap">
+    <link rel="stylesheet" href="https://mdbootstrap.com/api/snippets/static/download/MDB-Pro_4.19.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://mdbootstrap.com/api/snippets/static/download/MDB-Pro_4.19.2/css/mdb.min.css">
+    <link rel="stylesheet" href="https://mdbootstrap.com/wp-content/themes/mdbootstrap4/css/compiled-addons-4.19.2.min.css">
+    <link rel="stylesheet" type="text/css" href="https://mdbootstrap.com/wp-content/themes/mdbootstrap4/css/mdb-plugins-gathered.min.css">
+
+    <style type="text/css">
+        /* Chart.js */
+        @-webkit-keyframes chartjs-render-animation {
+            from {
+                opacity: 0.99
+            }
+
+            to {
+                opacity: 1
+            }
+        }
+
+        @keyframes chartjs-render-animation {
+            from {
+                opacity: 0.99
+            }
+
+            to {
+                opacity: 1
+            }
+        }
+
+        .chartjs-render-monitor {
+            -webkit-animation: chartjs-render-animation 0.001s;
+            animation: chartjs-render-animation 0.001s;
+        }
+
+
+        /*regular css*/
+        header {
+            background-position: center;
+        }
+
+        header img {
+            width: 100%;
+            align-self: center;
+        }
+
+        @media only screen and (min-width: 800px) {
+            header img {
+                display: block;
+                margin-left: auto;
+                margin-right: auto;
+                height: 20vh;
+                width: auto;
+            }
+
+            header {
+                background-color: rgb(39, 39, 39);
+            }
+        }
+
+        body {
+            /*background behind projects*/
+            background: #eeeeee no-repeat center center fixed;
+            -webkit-background-size: cover;
+            -moz-background-size: cover;
+            -o-background-size: cover;
+            background-size: cover;
+        }
+
+        /*border at bottom*/
+        hr {
+            padding: 0;
+            margin: 0;
+            border-top: 3px solid rgb(39, 39, 39);
+        }
+
+        /*side navbar*/
+        #mySidenav a {
+            position: fixed;
+            left: -8px;
+            transition: 0.3s;
+            padding: 10px;
+            padding-bottom: 3px;
+            padding-top: 3px;
+            width: 95px;
+            text-decoration: none;
+            font-size: 20px;
+            font-weight: bold;
+            color: rgb(255, 0, 0);  /*sidebar text color*/
+            border-radius: 0 5px 5px 0;
+            background-color: rgb(0, 0, 0);   /*sidebar box color*/
+            z-index: 10;
+        }
+
+        /*sidebar mouse hover*/
+        #mySidenav a:hover {
+            left: 0;
+            background-color: rgba(129, 129, 129, 0.9);
+        }
+
+        /*projects menu tab*/
+        #projects {
+            top: 5px;
+        }
+
+        /*about menu tab*/
+        #about {
+            top: 43px;
+        }
+
+        /*github menu tab*/
+        #git {
+            top: 81px;
+        }
+
+        /*resume menu tab*/
+        #resume {
+            top: 119px;
+        }
+
+    </style>
+</head>
+
+<div id="mySidenav" class="sidenav">
+    <a href="#projectsSection" id="projects">Projects</a>
+    <a href="#one" id="about">About</a>
+    <a href="https://github.com/AbDaug" target="_blank" id="git">GitHub</a>
+    <a href="media/AbigailMarkishResumeOctober2021.pdf" target="_blank" id="resume">Resume</a>
+    
+</div>
+
+<!--header image-->
+<header>
+    <img class="header" src="media/oof.ico" alt="Header Image">
+</header>
+
+<hr>
+<body>
+    <!-- Main Body Project Section -->
+    <section id=projectsSection>
+
+        <style>
+            /*active nav link*/
+            .md-pills .nav-link.active {
+                color: white;
+                background-color: rgb(0, 0, 0);
+            }
+
+            /*inactive nav link BASE*/
+            .nav-link {
+                background-color: rgb(255, 255, 255);
+                margin-bottom: 0;
+            }
+
+            #button.close {
+                position: absolute;
+                right: 30px;
+                z-index: 2;
+                position: x=-2rem;
+                padding-top: .6rem;
+            }
+
+        </style>
+
+        <!-- Test Modal TODO-->
+        <div class="modal fade" id="testModal1" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-body p-0">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">x</span>
+                    </button>
+
+                    <!-- Grid row -->
+                    <div class="row">
+
+                        <!-- Grid column -->
+                        <div class="col-md-0 py-5 pl-5 pr-5">
+
+                            <h5 class="font-weight-normal mb-2">Test Project 1</h5>
+
+                           <iframe width="100%" height="300vw" src="https://www.youtube.com/watch?v=ErTbScSd_LM&ab_channel=Arijo%27sJambox" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                           
+                            <p class="text-muted mb-2">This is a test project popup.</p>
+
+                            <p>This is just a test. Do not be alarmed.</p>
+                            
+                            <p class="text-uppercase mb-2"><strong>Other Stuff</strong></p>
+                            <p>I make video game</p>
+
+                            <img class="img-fluid" src="media/oof.ico" alt="image">
+
+                            <ul class="list-unstyled font-small mt-2">
+                                <li>
+                                    <p class="text-uppercase mb-2"><strong>Other Again</strong></p>
+
+                                    <ul style="padding-left: 18">
+                                        <li>Item 1</li>
+                                        <li>Item 2</li>
+                                        <li>Item 3</li>
+                                    </ul>
+                                    <p class="text-muted mb-2">
+                                    </p>
+                                </li>
+                            </ul>
+
+                            <img class="img-fluid" src="media/oof.ico" alt="image">
+
+                            <p class="text-uppercase mb-2 mt-2"><strong>Other Again Again</strong></p>
+                            
+                            <p class="text-muted mb-1">More info dumping about project</p>
+
+                            <p class="text-uppercase mb-2"><strong>Skills</strong></p>
+                            <p class="text-muted mb-4">List skills here</p>
+
+                            <p class="text-uppercase mb-2"><strong>Links</strong></p>
+                            <ul>
+                                <li><a href="https://theuselessweb.site/bees/">Any reference links</a></li>
+                                <li><a href="https://theuselessweb.site/bees/">Go around here</a></li>
+                            </ul>
+                        </div>
+                        <!-- Grid column -->
+
+                        <!-- Grid column -->
+                        <!--                                <div class="col-md-6">-->
+
+                        <div class="view rounded-right">
+
+                        </div>
+
+                        <!--                                </div>-->
+                        <!-- Grid column -->
+
+                    </div>
+                    <!-- Grid row -->
+                </div>
+            </div>
+        </div>
+        </div>
+        
+        <!-- Test Modal TODO-->
+        <div class="modal fade" id="testModal2" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-body p-0">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">x</span>
+                    </button>
+
+                    <!-- Grid row -->
+                    <div class="row">
+
+                        <!-- Grid column -->
+                        <div class="col-md-0 py-5 pl-5 pr-5">
+
+                            <h5 class="font-weight-normal mb-2">Test Project 2</h5>
+
+                           <iframe width="100%" height="300vw" src="https://www.youtube.com/watch?v=ErTbScSd_LM&ab_channel=Arijo%27sJambox" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                           
+                            <p class="text-muted mb-2">This is a test project popup.</p>
+
+                            <p>This is just a test. Do not be alarmed.</p>
+                            
+                            <p class="text-uppercase mb-2"><strong>Other Stuff</strong></p>
+                            <p>I make video game</p>
+
+                            <img class="img-fluid" src="media/oof.ico" alt="image">
+
+                            <ul class="list-unstyled font-small mt-2">
+                                <li>
+                                    <p class="text-uppercase mb-2"><strong>Other Again</strong></p>
+
+                                    <ul style="padding-left: 18">
+                                        <li>Item 1</li>
+                                        <li>Item 2</li>
+                                        <li>Item 3</li>
+                                    </ul>
+                                    <p class="text-muted mb-2">
+                                    </p>
+                                </li>
+                            </ul>
+
+                            <img class="img-fluid" src="media/oof.ico" alt="image">
+
+                            <p class="text-uppercase mb-2 mt-2"><strong>Other Again Again</strong></p>
+                            
+                            <p class="text-muted mb-1">More info dumping about project</p>
+
+                            <p class="text-uppercase mb-2"><strong>Skills</strong></p>
+                            <p class="text-muted mb-4">List skills here</p>
+
+                            <p class="text-uppercase mb-2"><strong>Links</strong></p>
+                            <ul>
+                                <li><a href="https://theuselessweb.site/bees/">Any reference links</a></li>
+                                <li><a href="https://theuselessweb.site/bees/">Go around here</a></li>
+                            </ul>
+                        </div>
+                        <!-- Grid column -->
+
+                        <!-- Grid column -->
+                        <!--                                <div class="col-md-6">-->
+
+                        <div class="view rounded-right">
+
+                        </div>
+
+                        <!--                                </div>-->
+                        <!-- Grid column -->
+
+                    </div>
+                    <!-- Grid row -->
+                </div>
+            </div>
+        </div>
+        </div>
+
+        <!-- Test Modal TODO-->
+        <div class="modal fade" id="testModal3" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-body p-0">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">x</span>
+                    </button>
+
+                    <!-- Grid row -->
+                    <div class="row">
+
+                        <!-- Grid column -->
+                        <div class="col-md-0 py-5 pl-5 pr-5">
+
+                            <h5 class="font-weight-normal mb-2">Test Project 3</h5>
+
+                           <iframe width="100%" height="300vw" src="https://www.youtube.com/watch?v=ErTbScSd_LM&ab_channel=Arijo%27sJambox" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                           
+                            <p class="text-muted mb-2">This is a test project popup.</p>
+
+                            <p>This is just a test. Do not be alarmed.</p>
+                            
+                            <p class="text-uppercase mb-2"><strong>Other Stuff</strong></p>
+                            <p>I make video game</p>
+
+                            <img class="img-fluid" src="media/oof.ico" alt="image">
+
+                            <ul class="list-unstyled font-small mt-2">
+                                <li>
+                                    <p class="text-uppercase mb-2"><strong>Other Again</strong></p>
+
+                                    <ul style="padding-left: 18">
+                                        <li>Item 1</li>
+                                        <li>Item 2</li>
+                                        <li>Item 3</li>
+                                    </ul>
+                                    <p class="text-muted mb-2">
+                                    </p>
+                                </li>
+                            </ul>
+
+                            <img class="img-fluid" src="media/oof.ico" alt="image">
+
+                            <p class="text-uppercase mb-2 mt-2"><strong>Other Again Again</strong></p>
+                            
+                            <p class="text-muted mb-1">More info dumping about project</p>
+
+                            <p class="text-uppercase mb-2"><strong>Skills</strong></p>
+                            <p class="text-muted mb-4">List skills here</p>
+
+                            <p class="text-uppercase mb-2"><strong>Links</strong></p>
+                            <ul>
+                                <li><a href="https://theuselessweb.site/bees/">Any reference links</a></li>
+                                <li><a href="https://theuselessweb.site/bees/">Go around here</a></li>
+                            </ul>
+                        </div>
+                        <!-- Grid column -->
+
+                        <!-- Grid column -->
+                        <!--                                <div class="col-md-6">-->
+
+                        <div class="view rounded-right">
+
+                        </div>
+
+                        <!--                                </div>-->
+                        <!-- Grid column -->
+
+                    </div>
+                    <!-- Grid row -->
+                </div>
+            </div>
+        </div>
+        </div>
+
+        <h3 class="text-center m-3" style="color:rgb(146, 0, 0); font-size: 8vh; font-family: Impact;">Abigail Markish</h3>
+
+        <h3 class="text-center mb-3" style="color:rgba(146, 0, 0, 0.5);">Insert Cheesy Tagline Here</h3>
+
+        <p style="color:rgba(146, 0, 0); text-align: center; font-size: larger;">
+            (Click on projects to see more details)
+        </p>
+
+        <!--First row TODO UPPER TABS-->
+        <div class="row" style="width: 100%; ">
+
+            <!--First column-->
+            <div class="col-12">
+
+                <!-- Nav tabs -->
+                <ul class="nav md-pills flex-center flex-wrap mx-0 " role="tablist">
+
+                    <style>
+                        #navitem {}
+
+                        #navitem:hover {
+                            background-color: rgba(110, 110, 110, 0.6);
+                        }
+
+                    </style>
+                    <li class="nav-item">
+                        <a id="navitem" class="nav-link active font-weight-bold text-uppercase" data-toggle="tab" href="#panel31" role="tab">ALL</a>
+                    </li>
+                    <li class="nav-item">
+                        <a id="navitem" class="nav-link font-weight-bold text-uppercase" data-toggle="tab" href="#panel32" role="tab">Level Design</a>
+                    </li>
+                    <li class="nav-item">
+                        <a id="navitem" class="nav-link font-weight-bold text-uppercase" data-toggle="tab" href="#panel33" role="tab">Art Direction</a>
+                    </li>
+                    <li class="nav-item">
+                        <a id="navitem" class="nav-link font-weight-bold text-uppercase" data-toggle="tab" href="#panel34" role="tab">UI/UX</a>
+                    </li>
+                </ul>
+
+            </div>
+            <!--First column-->
+
+        </div>
+        <!--First row-->
+
+        <!--Tab panels TODO-->
+        <div class="tab-content mb-5">
+
+            <!--Panel 1 ALL-->
+            <div class="tab-pane fade show in active" id="panel31" role="tabpanel">            
+                <!-- Projects ALL -->
+                <div class="row">
+                    <!-- Project 1 -->
+                    <div class="col-md-6 col-lg-4">
+                        <!-- Card -->
+                        <a class="card hoverable mb-4" data-toggle="modal" data-target="#testModal2">
+                            <!-- Card image -->
+                            <img class="card-img-top" src="media/testimage.png" alt="Test Image">
+                            <!-- Card content -->
+                            <div class="card-body">
+                                <h5 class="my-3">Test Project 1</h5>
+                                <p class="my-3" style="font-style: italic">Type of Work</p>
+                                <p class="card-text text-uppercase mb-3">Specific Systems/Techniques Used</p>
+                            </div>
+                        </a>
+                    </div>
+                    <!--Project 1 END-->
+                    
+                    <!-- Project 2 -->
+                    <div class="col-md-6 col-lg-4">
+                        <!-- Card -->
+                        <a class="card hoverable mb-4" data-toggle="modal" data-target="#testModal1">
+                            <!-- Card image -->
+                            <img class="card-img-top" src="media/testimage.png" alt="Test Image">
+                            <!-- Card content -->
+                            <div class="card-body">
+                                <h5 class="my-3">Test Project 2</h5>
+                                <p class="my-3" style="font-style: italic">Type of Work</p>
+                                <p class="card-text text-uppercase mb-3">Specific Systems/Techniques Used</p>
+                            </div>
+                        </a>
+                    </div>
+                    <!--Project 2 END-->
+
+                    <!--Project 3-->
+                    <div class="col-md-6 col-lg-4">
+                           <!-- Card -->
+                           <a class="card hoverable mb-4" data-toggle="modal" data-target="#testModal3">
+                            <!-- Card image -->
+                            <img class="card-img-top" src="media/testimage.png" alt="Test Image">
+                            <!-- Card content -->
+                            <div class="card-body">
+                                <h5 class="my-3">Test Project 3</h5>
+                                <p class="my-3" style="font-style: italic">Type of Work</p>
+                                <p class="card-text text-uppercase mb-3">Specific Systems/Techniques Used</p>
+                            </div>
+                        </a>   
+                    </div>
+                    <!--Project 3 END-->
+
+                    <!--Project 4-->
+                    <div class="col-md-6 col-lg-4">
+                        <!-- Card -->
+                        <a class="card hoverable mb-4" data-toggle="modal" data-target="#testModal1">
+                         <!-- Card image -->
+                         <img class="card-img-top" src="media/testimage.png" alt="Test Image">
+                         <!-- Card content -->
+                         <div class="card-body">
+                             <h5 class="my-3">Test Project 4</h5>
+                             <p class="my-3" style="font-style: italic">Type of Work</p>
+                             <p class="card-text text-uppercase mb-3">Specific Systems/Techniques Used</p>
+                         </div>
+                     </a>   
+                    </div>
+                    <!--Project 4 END-->
+
+                    <!--Project 5-->
+                    <div class="col-md-6 col-lg-4">
+                    <!-- Card -->
+                        <a class="card hoverable mb-4" data-toggle="modal" data-target="#testModal1">
+                            <!-- Card image -->
+                            <img class="card-img-top" src="media/testimage.png" alt="Test Image">
+                            <!-- Card content -->
+                            <div class="card-body">
+                                <h5 class="my-3">Test Project 5</h5>
+                                <p class="my-3" style="font-style: italic">Type of Work</p>
+                                <p class="card-text text-uppercase mb-3">Specific Systems/Techniques Used</p>
+                            </div>
+                        </a>   
+                    </div>
+                    <!--Project 5 END-->
+
+                </div>
+                <!--Grid Row END-->
+            </div>
+
+            <!--Panel 2 Level Design-->
+            <div class="tab-pane fade" id="panel32" role="tabpanel">
+                <!-- Grid row -->
+                <div class="row">
+                    <!-- Project 2 -->
+                    <div class="col-md-6 col-lg-4">
+                        <!-- Card -->
+                        <a class="card hoverable mb-4" data-toggle="modal" data-target="#testModal1">
+                            <!-- Card image -->
+                            <img class="card-img-top" src="media/testimage.png" alt="Test Image">
+                            <!-- Card content -->
+                            <div class="card-body">
+                                <h5 class="my-3">Test Project 2</h5>
+                                <p class="my-3" style="font-style: italic">Type of Work</p>
+                                <p class="card-text text-uppercase mb-3">Specific Systems/Techniques Used</p>
+                            </div>
+                        </a>
+                    </div>
+                    <!--Project 2 END-->
+
+                    <!--Project 3-->
+                    <div class="col-md-6 col-lg-4">
+                        <!-- Card -->
+                        <a class="card hoverable mb-4" data-toggle="modal" data-target="#testModal3">
+                            <!-- Card image -->
+                            <img class="card-img-top" src="media/testimage.png" alt="Test Image">
+                            <!-- Card content -->
+                            <div class="card-body">
+                                <h5 class="my-3">Test Project 3</h5>
+                                <p class="my-3" style="font-style: italic">Type of Work</p>
+                                <p class="card-text text-uppercase mb-3">Specific Systems/Techniques Used</p>
+                            </div>
+                        </a>   
+                    </div>
+                    <!--Project 3 END-->
+                </div>
+                <!-- Grid row -->
+            </div>
+
+            <!--Panel 3 Art Direction-->
+            <div class="tab-pane fade" id="panel33" role="tabpanel">
+                <!-- Grid row -->
+                <div class="row">
+                    <!--Project 4-->
+                    <div class="col-md-6 col-lg-4">
+                        <!-- Card -->
+                        <a class="card hoverable mb-4" data-toggle="modal" data-target="#testModal1">
+                            <!-- Card image -->
+                            <img class="card-img-top" src="media/testimage.png" alt="Test Image">
+                            <!-- Card content -->
+                            <div class="card-body">
+                                <h5 class="my-3">Test Project 4</h5>
+                                <p class="my-3" style="font-style: italic">Type of Work</p>
+                                <p class="card-text text-uppercase mb-3">Specific Systems/Techniques Used</p>
+                            </div>
+                        </a>   
+                    </div>
+                    <!--Project 4 END-->
+
+                    <!--Project 5-->
+                    <div class="col-md-6 col-lg-4">
+                        <!-- Card -->
+                        <a class="card hoverable mb-4" data-toggle="modal" data-target="#testModal1">
+                            <!-- Card image -->
+                            <img class="card-img-top" src="media/testimage.png" alt="Test Image">
+                            <!-- Card content -->
+                            <div class="card-body">
+                                <h5 class="my-3">Test Project 5</h5>
+                                <p class="my-3" style="font-style: italic">Type of Work</p>
+                                <p class="card-text text-uppercase mb-3">Specific Systems/Techniques Used</p>
+                            </div>
+                        </a>   
+                    </div>
+                    <!--Project 5 END-->
+                </div>
+                <!-- Grid row -->
+            </div>
+
+            <!--Panel 4 UI/UX-->
+            <div class="tab-pane fade" id="panel34" role="tabpanel">
+                <!-- Grid row -->
+                <div class="row">
+                    <!--Project 4-->
+                    <div class="col-md-6 col-lg-4">
+                        <!-- Card -->
+                        <a class="card hoverable mb-4" data-toggle="modal" data-target="#testModal1">
+                            <!-- Card image -->
+                            <img class="card-img-top" src="media/testimage.png" alt="Test Image">
+                            <!-- Card content -->
+                            <div class="card-body">
+                                <h5 class="my-3">Test Project 4</h5>
+                                <p class="my-3" style="font-style: italic">Type of Work</p>
+                                <p class="card-text text-uppercase mb-3">Specific Systems/Techniques Used</p>
+                            </div>
+                        </a>   
+                    </div>
+                    <!--Project 4 END-->
+
+                    <!--Project 5-->
+                    <div class="col-md-6 col-lg-4">
+                    <!-- Card -->
+                        <a class="card hoverable mb-4" data-toggle="modal" data-target="#testModal1">
+                            <!-- Card image -->
+                            <img class="card-img-top" src="media/testimage.png" alt="Test Image">
+                            <!-- Card content -->
+                            <div class="card-body">
+                                <h5 class="my-3">Test Project 5</h5>
+                                <p class="my-3" style="font-style: italic">Type of Work</p>
+                                <p class="card-text text-uppercase mb-3">Specific Systems/Techniques Used</p>
+                            </div>
+                        </a>   
+                    </div>
+                    <!--Project 5 END-->
+
+                </div>
+                <!-- Grid row -->
+            </div>
+
+        </div>
+        <!--Tab panels-->
+
+    </section>
+
+    <hr>
+    <!--About Me css Section-->
+    <style>
+        .wrapper {
+            overflow: hidden;
+            background-color: rgb(39, 39, 39);
+            height: auto
+        }
+
+        .wrapper div {
+            height: auto;
+            min-height: 200px;
+        }
+
+        #one {
+            float: left;
+            width: 50%;
+            height: auto;
+            background-color: rgb(146, 0, 0);
+        }
+
+        #one h3 {
+            margin: 2vw;
+            color: rgb(0, 0, 0);
+            font-weight: bold;
+        }
+
+        #one img {
+            margin: 2vw;
+            text-align: center;
+
+            width: 80%;
+            height: auto;
+        }
+
+        /*about me overall color*/
+        #two {
+            color: rgb(255, 255, 255);
+            width: 50%;
+            overflow: hidden;
+            margin: 10px;
+            min-height: 170px;
+        }
+
+        #two p {
+            margin: 2vw;
+            font-size: 19.5px;
+        }
+
+        @media screen and (max-width:1250px) {
+            #two p {
+                font-size: 14px;
+                margin-top: 0;
+                text-align: center;
+            }
+        }
+
+        @media screen and (max-width:900px) {
+            #two p {
+                font-size: 13px;
+                margin: 1vw;
+                text-align: center;
+            }
+        }
+
+        @media screen and (max-width: 700px) {
+            #two {
+                float: none;
+                width: 100%;
+            }
+
+            #one {
+                float: none;
+                margin-right: 0;
+                width: auto;
+                border: 0;
+                border-bottom: 2px solid rgb(0, 0, 0);
+            }
+
+            #two p {
+                font-size: 23px;
+            }
+        }
+
+    </style>
+
+    <!--about me html section-->
+    <section class="wrapper">
+        <div id="one">
+            <h3>About Me</h3>
+            <img class=imageofme src="media/testimage.png" alt="Image of Myself">
+        </div>
+        <div id="two">
+            <p class="indent">
+                Thought-provoking paragraph 1
+            </p>
+
+            <p>
+                Thought-provoking paragraph 2
+            </p>
+
+            <p>
+                Thought-provoking paragraph 3
+            </p>
+        </div>
+
+    </section>
+
+    <hr>
+    <!--bottom links css-->
+    <style>
+        .contacts {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            background: #eeeeee;
+            padding-bottom: 0;
+            margin-bottom: 0;
+            font-size: 25px;
+        }
+
+        .footer {
+            margin: 2rem;
+            list-style-type: none;
+        }
+
+        /*unvisited link*/
+        .footer>a:link {
+            color: rgb(146, 0, 0);
+        }
+
+        /*visited link*/
+        .footer>a:visited {
+            color: rgb(61, 0, 0);
+        }
+
+        /*hover link*/
+        .footer>a:hover {
+            color: rgb(214, 71, 71);
+        }
+
+        /*active link*/
+        .footer>a:active {
+            color: rgb(255, 69, 69);
+        }
+
+        @media screen and (max-width: 700px) {
+            .contacts {
+                display: flex;
+                flex-direction: column;
+                text-align: center;
+            }
+        }
+
+    </style>
+
+    <footer id="contacts">
+        <ul class="contacts">
+            <li class="footer"><a href="mailto:abmarkish16@yahoo.com">Email : abmarkish16@yahoo.com</a></li>
+            <li class="footer"><a href="https://www.linkedin.com/in/abigail-markish-0986b1184/" target="_blank">LinkedIn</a></li>
+            <li class="footer"><a href="media/AbigailMarkishResumeOctober2021.pdf" target="_blank">Resume</a></li>
+        </ul>
+    </footer>
+
+    <!--JavaScript Section (modal fades) -->
+
+    <script type="text/javascript" src="https://mdbootstrap.com/api/snippets/static/download/MDB-Pro_4.19.2/js/jquery.min.js"></script>
+    <script type="text/javascript" src="https://mdbootstrap.com/api/snippets/static/download/MDB-Pro_4.19.2/js/popper.min.js"></script>
+    <script type="text/javascript" src="https://mdbootstrap.com/api/snippets/static/download/MDB-Pro_4.19.2/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="https://mdbootstrap.com/api/snippets/static/download/MDB-Pro_4.19.2/js/mdb.min.js"></script>
+    <script type="text/javascript" src="https://mdbootstrap.com/wp-content/themes/mdbootstrap4/js/bundles/4.19.2/compiled-addons.min.js"></script>
+    <script type="text/javascript" src="https://mdbootstrap.com/wp-content/themes/mdbootstrap4/js/plugins/mdb-plugins-gathered.min.js"></script>
+    <script type="text/javascript">
+        {
+            $(function() {
+                var selectedClass = "";
+                $(".filter").click(function() {
+                    selectedClass = $(this).attr("data-rel");
+                    $("#gallery").fadeTo(100, 0.1);
+                    $("#gallery div").not("." + selectedClass).fadeOut().removeClass('animation');
+                    setTimeout(function() {
+                        $("." + selectedClass).fadeIn().addClass('animation');
+                        $("#gallery").fadeTo(300, 1);
+                    }, 300);
+                });
+            });
+        }
+
+    </script>
+    <div class="hiddendiv common"></div>
+</body>
+
+</html>
